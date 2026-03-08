@@ -16,12 +16,14 @@ header {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /*compatibilité Safari/IOS*/
+  -webkit-backdrop-filter: blur(10px);
+  /*compatibilité Safari/IOS*/
   position: fixed;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -60,6 +62,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .contact-button {
   background-color: rgb(41, 209, 41);
   border-radius: 7px;
@@ -114,6 +117,7 @@ section {
   text-align: center;
   color: rgb(3, 59, 3);
 }
+
 h2 {
   text-align: center;
   color: rgb(14, 133, 14);
@@ -123,6 +127,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .intro-buttons button {
   margin: 20px;
   border-radius: 17px;
@@ -130,12 +135,14 @@ h2 {
   width: 150px;
   cursor: pointer;
 }
+
 .left-button {
   background-color: rgb(41, 209, 41);
   color: white;
   border: 1px solid rgb(41, 209, 41);
   transition-duration: 0.2s;
 }
+
 .left-button:hover,
 .contact-button:hover {
   background-color: white;
@@ -152,6 +159,7 @@ h2 {
   cursor: pointer;
   transition-duration: 0.2s;
 }
+
 .right-button:hover,
 .cv-button:hover,
 #submit-button:hover {
@@ -256,11 +264,13 @@ h2 {
 .box p {
   font-size: 14px;
 }
+
 .competenceAndProjet {
   display: flex;
   gap: 20px;
   margin-top: 40px;
 }
+
 .skills_list {
   margin-top: auto;
   margin-bottom: auto;
@@ -321,6 +331,7 @@ form input {
   padding: 6px;
   max-width: 100%;
   border: 1px solid rgb(146, 219, 180);
+  resize: vertical;
 }
 
 form input:focus,
@@ -338,6 +349,7 @@ a {
   text-decoration: none;
   color: rgb(44, 177, 44);
 }
+
 .contact-container {
   display: flex;
   width: 80vw;
@@ -370,8 +382,10 @@ footer {
 
 .imgProjet {
   width: 100%;
-  height: 140px; /* Hauteur fixe pour l'uniformité */
-  object-fit: cover; /* Recadre l'image sans l'écraser */
+  height: 140px;
+  /* Hauteur fixe pour l'uniformité */
+  object-fit: cover;
+  /* Recadre l'image sans l'écraser */
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   margin-bottom: 10px;
@@ -380,25 +394,30 @@ footer {
 /* Petit ajustement pour les textes à l'intérieur */
 .box-content {
   padding: 0 10px;
-  flex-grow: 1; /* Permet d'occuper l'espace pour pousser les skills vers le bas */
+  flex-grow: 1;
+  /* Permet d'occuper l'espace pour pousser les skills vers le bas */
 }
 
 /* Pour la date en bas */
 .date-projet {
   font-size: 12px;
   padding-bottom: 10px;
-  color: rgb(36, 119, 36); /* Votre vert habituel */
+  color: rgb(36, 119, 36);
+  /* Votre vert habituel */
   margin-top: 5px;
 }
 
 /* S'assurer que le lien ne casse pas la boite */
 .projets-box a {
   text-decoration: none;
-  color: inherit; /* Garde la couleur du texte */
-  display: block; /* Prend toute la place */
+  color: inherit;
+  /* Garde la couleur du texte */
+  display: block;
+  /* Prend toute la place */
 }
 
 @media screen and (max-width: 900px) {
+
   /* --- HEADER --- */
   .header-container {
     padding: 0 10px;
@@ -413,9 +432,11 @@ footer {
   h1 {
     font-size: 1.8rem;
   }
+
   h2 {
     font-size: 1.4rem;
   }
+
   p {
     font-size: 1rem;
     padding: 0 10px;
@@ -423,27 +444,32 @@ footer {
 
   /* --- SECTION "QUI SUIS-JE" (About Me) --- */
   .bottom-container {
-    flex-direction: column; /* On empile les blocs l'un sur l'autre */
+    flex-direction: column;
+    /* On empile les blocs l'un sur l'autre */
     width: 90%;
     align-items: center;
   }
 
   .bottom-container-left,
   .bottom-container-right {
-    width: 100%; /* Ils prennent toute la largeur */
+    width: 100%;
+    /* Ils prennent toute la largeur */
   }
 
   /* --- CARTES (Compétences & Projets) --- */
   .competenceAndProjet {
-    flex-direction: column; /* On empile les cartes */
+    flex-direction: column;
+    /* On empile les cartes */
     gap: 30px;
     width: 100%;
     align-items: center;
   }
 
   .box {
-    width: 90%; /* La carte prend 90% de la largeur de l'écran */
-    height: auto; /* La hauteur s'adapte au contenu */
+    width: 90%;
+    /* La carte prend 90% de la largeur de l'écran */
+    height: auto;
+    /* La hauteur s'adapte au contenu */
     min-height: 250px;
     padding-bottom: 20px;
   }
@@ -456,11 +482,13 @@ footer {
 
   /*  SECTION CONTACT  */
   .contact {
-    height: auto; /* On laisse la section grandir */
+    height: auto;
+    /* On laisse la section grandir */
   }
 
   .contact-container {
-    flex-direction: column; /* Le formulaire passe au-dessus des liens */
+    flex-direction: column;
+    /* Le formulaire passe au-dessus des liens */
     width: 90vw;
     gap: 40px;
   }
